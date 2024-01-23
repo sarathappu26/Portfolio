@@ -9,10 +9,16 @@ body {
     border-radius: 50%;
     border: 3px solid #fff; /* White border */
     overflow: hidden;
-    position:absolute;
+    position: absolute;
     top: 30%;
     left: 10%;
+}
 
+/* Hide the image on smaller screens */
+@media (max-width: 767px) {
+    .profile-pic {
+        display: none !important; /* Use !important to override existing styles */
+    }
 }
 
 .profile-pic img {
